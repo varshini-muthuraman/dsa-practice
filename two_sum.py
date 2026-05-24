@@ -9,3 +9,4 @@ class Solution:
             else:
                 return [hashMap[complement],i]
         return []
+ 
