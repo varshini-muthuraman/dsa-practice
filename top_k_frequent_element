@@ -1,0 +1,11 @@
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+      freq_element={}
+       for integer in nums:
+        if integer not in freq_element:
+            freq_element[integer]=0
+
+        freq_element[interger]+=1
+      sorted_dict = dict(sorted(freq_element.items(), key=lambda item: item[1],reverse=True))      
+      first_k = dict(list(sorted_dict.items()[:k]))
+      print(first_k)
